@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApplicanceActivity">
-
+    tools:context=".TvActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_applicance"
+        android:id="@+id/rv_tv"
         android:layout_width="426dp"
         android:layout_height="571dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -19,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_appliance_checkout"
+        android:id="@+id/btn_tv_checkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="checkout"
@@ -27,8 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_applicance"
+        app:layout_constraintTop_toBottomOf="@+id/rv_tv"
         app:layout_constraintVertical_bias="0.5" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

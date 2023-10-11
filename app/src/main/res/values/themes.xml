@@ -13,4 +13,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.Fuliang_COMP304Sec002_lab02_ex1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Fuliang_COMP304Sec002_lab02_ex1.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Fuliang_COMP304Sec002_lab02_ex1.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
 </resources>
