@@ -40,8 +40,7 @@ class ApplicanceActivity : MenuEnableActivity() {
         findViewById<Button>(R.id.btn_appliance_checkout).setOnClickListener{
 
             check(it)
-            intent = Intent(this, CheckoutActivity::class.java)
-            startActivity(intent)
+            goCheckOut()
         }
     }
 

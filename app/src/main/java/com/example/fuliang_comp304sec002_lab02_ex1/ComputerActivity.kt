@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class ComputerActivity : MenuEnableActivity() {
@@ -30,9 +31,7 @@ class ComputerActivity : MenuEnableActivity() {
         findViewById<Button>(R.id.btn_computer_checkout).setOnClickListener{
 
             check(it)
-            intent = Intent(this, CheckoutActivity::class.java)
-            startActivity(intent)
-
+            goCheckOut()
         }
     }
 

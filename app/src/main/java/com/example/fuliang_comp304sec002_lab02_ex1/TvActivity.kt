@@ -27,8 +27,7 @@ class TvActivity : MenuEnableActivity() {
         findViewById<Button>(R.id.btn_tv_checkout).setOnClickListener{
 
             check(it)
-            intent = Intent(this, CheckoutActivity::class.java)
-            startActivity(intent)
+            goCheckOut()
 
         }
     }

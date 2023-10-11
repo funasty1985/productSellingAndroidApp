@@ -53,6 +53,20 @@ abstract class MenuEnableActivity : AppCompatActivity() {
         return jsonToProductArray(productStr)
     }
 
+    fun goCheckOut() {
+
+        var result: List<ProductOption> = loadProducts()
+
+        // validate if items is selected
+        if(result.isNullOrEmpty()){
+            Toast.makeText(applicationContext,"Please select at least one item", Toast.LENGTH_SHORT).show()
+        } else {
+            intent = Intent(this, CheckoutActivity::class.java)
+            startActivity(intent)
+        }
+
+    }
+
     abstract fun check(view: View?)
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

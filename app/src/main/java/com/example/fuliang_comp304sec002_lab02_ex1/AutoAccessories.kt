@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class AutoAccessories : MenuEnableActivity() {
@@ -31,9 +32,7 @@ class AutoAccessories : MenuEnableActivity() {
         findViewById<Button>(R.id.btn_aa_checkout).setOnClickListener{
 
             check(it)
-            intent = Intent(this, CheckoutActivity::class.java)
-            startActivity(intent)
-
+            goCheckOut()
         }
 
     }

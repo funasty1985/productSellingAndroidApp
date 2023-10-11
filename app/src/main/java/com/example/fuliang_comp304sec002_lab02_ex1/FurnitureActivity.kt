@@ -30,8 +30,7 @@ class FurnitureActivity : MenuEnableActivity() {
         findViewById<Button>(R.id.btn_furniture_checkout).setOnClickListener{
 
             check(it)
-            intent = Intent(this, CheckoutActivity::class.java)
-            startActivity(intent)
+            goCheckOut()
 
         }
     }
